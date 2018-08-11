@@ -1,0 +1,49 @@
+<!doctype html>
+<title>Kremlin</title>
+<style>
+body {
+	margin: 0;
+	background-color: #000;
+	color: #00a5ff;
+	font-family: Verdana,sans-serif;
+	font-size: 62.5%;
+}
+
+form {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-80%);
+	width: 100%;
+	text-align: center;
+}
+
+.error {
+	color: #e00;
+}
+
+input {
+	display: block;
+	margin: auto;
+	background: black;
+	color: #8ea6ff;
+}
+
+input[type="password"] {
+	border: 1px solid #333;
+	font-size: 25px;
+}
+ 
+input[type="submit"] {
+	cursor: pointer;
+	margin-top: 10px;
+	border: none;
+	font-size: 20px;
+}
+</style>
+<form action="/login">
+	<h1>INTERSOL INTRANET</h1>
+	<h2>RESTRICTED ACCESS</h2>
+	<h3 class="error">INCORRECT ACCESS CODE</h3>
+	<input type="password" name="p" autofocus="autofocus">
+	<input type="submit" value="PROCEED">
+</form>
